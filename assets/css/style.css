@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css2?family=Tiro+Kannada&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.tituloMenor{display: none;}
+.tituloResponsive{display: none;}
+.mapa2{display: none;}
+.contenedorGrid{
+    display: grid;
+    grid-template-areas: "header header header header"
+                            "main main main main"
+                            
+                            "footer footer footer footer";
+}
+body{
+    background-color: black;
+    font-family: 'Tiro Kannada', serif;
+}
+h1{
+    color: rgb(11, 240, 252, 0.92);
+      }
+.header{
+    grid-area: header;
+    background-color: rgba(56, 54, 54, 0.591);
+    display: flex;
+    width: 100%;
+   
+    
+}
+.navbar{
+    justify-items: end;
+    display: flex;
+
+
+}
+a{
+    color: aliceblue;
+}
+.navbar__ul{
+    margin: 15px;
+    text-align: center;
+    justify-content:end;
+    padding-left: 30px;
+
+}
+.marcado{
+    color: rgb(11, 240, 252, 0.92);
+}
+.navbar__li{
+    list-style: none;
+    display: inline-block;
+    padding-left: 15px;
+    margin-left: 15px;
+    
+
+}
+.main{
+    grid-area: main;
+}
+.fondo{
+    display: flex;
+    
+
+    height:400px;
+    background-size: 100%;
+    background-image: url(../img/BC.jpg);
+    background-attachment: fixed;
+
+}
+
+.main__subtitulo{
+   
+    margin-top: 150px;
+    color: rgba(11, 240, 252, 0.92);
+    margin-left: 500px;
+    text-align: center;
+    justify-content: center;
+  
+}
+.tarjeta{
+    padding: 20px;
+    color: antiquewhite;
+    border-style: solid;
+    border-color: aliceblue;
+    border-radius: 5px;
+    display: flex;
+    width: 250px;
+    margin: 10px;
+    flex-direction: column;
+
+}
+.tarjeta__titulo{
+ text-align: center;
+}
+.tarjeta__descripcion{
+    margin-left: 20px;
+    justify-items: center;
+    text-align: center;
+    margin-top: 5px;
+
+}
+.tarjeta__img{
+    width: 100%;
+    border-style: solid;
+    border-color: aliceblue;
+    border-radius: 5px;
+    justify-items: center;
+    text-align: center;
+}
+.tarjeta__boton{
+    margin: 20px;
+    border-radius: 5px;
+    padding: 10px;
+}
+.footer{
+    grid-area: footer;
+    color: antiquewhite;
+}
+.video{
+    display: flex;
+    justify-content: center;
+    border: 5px;
+    border-style: solid;
+    border-color: aliceblue;
+    
+    border-radius: 5px;
+}
+@media screen and (max-width:468px){
+    .contenedorGrid{
+        grid-template-rows: 200px 300px auto;
+        display: grid;
+        grid-template-areas: "header "
+                                "main "
+                                "main "
+                                "footer" 
+    }
+ h1{     justify-content: center;
+        font-size: 35px;
+        color: rgb(11, 240, 252, 0.92);
+        height: 5px;
+        margin: left 90px;px;
+          }
+          .header{
+            grid-area: header;
+            display: flex;
+            
+            flex-direction: column;
+            flex-wrap: wrap;
+           justify-content: left
+            text-align: left; 
+            height: 450px;
+        
+            
+            
+
+           
+           
+            
+    
+        
+           
+            
+        }
+        .main{grid-area: main;
+        display: flex;
+    flex-direction: column;
+    justify-items: left;
+justify-content: left;}
+       
+        .navbar{
+            
+            list-style: none;
+            flex-direction: row;
+            text-align: start;
+            font-size: x-small;
+            justify-content: start;
+            
+
+            
+            
+        
+         
+          
+            margin-top: 100px;
+            
+
+            
+          
+
+        
+        
+}
+.navbar__ul{justify-content: space-around;
+justify-items: left;
+text-align: start;
+align-content: stretch;}
+.navbar__li{
+    margin: 5px;
+    padding: 0%;
+}
+.fondo{
+    background-attachment: fixed;
+    width: 100%; 
+    align-items: flex-start;
+    justify-items: left;
+    justify-content: left;    display: flex;
+    height:400px
+    
+
+    
+  
+    }
+    .tituloMenor{display: flex;
+    color: aqua;
+margin-top: 30%;}
+.main__subtitulo{
+display: none;    flex-direction: row;
+    justify-content: flex-start;}
+.tarjeta{margin-left: 45px;}
+.footer{
+    font-size:smaller ;
+}
+.video{flex-wrap: wrap;
+width: 360px;}
+}
+
+
+
+
+.gridsUbic{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-areas: "headerUbic headerUbic headerUbic    headerUbic"
+                            "mainUbic mainUbic mainUbic          mainUbic"
+                            "mainUbic mainUbic mainUbic          mainUbic"
+                            "footerUbic footerUbic footerUbic footerUbic";
+}
+h1{
+    color: rgb(11, 240, 252, 0.92);
+      }
+.headerUbic{
+    grid-area: headerUbic;
+    background-color: rgba(56, 54, 54, 0.591);
+    display: flex;
+    width: 100%;
+   
+    
+}
+.navbarUbic{
+    justify-items: end;
+    display: flex;
+
+
+}
+a{
+    color: aliceblue;
+}
+.navbarUbic__ul{
+    margin: 15px;
+    text-align: center;
+    justify-content:end;
+    padding-left: 30px;
+
+}
+.navbarUbic__li{
+    list-style: none;
+    display: inline-block;
+    padding-left: 15px;
+    margin-left: 15px;
+    
+
+}
+
+.mainUbic{
+    grid-area: mainUbic;
+    display: flex;
+    justify-content: right;
+    text-align: center;
+   
+}
+.h2Ubic{
+    margin-left: 50px;
+    margin-top: 50px;
+    border-style: solid;
+    border-color: aliceblue;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 5px;
+    text-decoration-line: underline;
+    color: rgb(11, 240, 252, 0.92);
+    background-color: black
+
+}
+.mapa{
+    
+    height: fit-content;
+    background-color: black ;
+    padding: 5px 10px 5px 10px;
+   margin-left: 150px;
+   margin-top: 40px;
+   border-style: solid;
+   border-color: aliceblue;
+   border-width: 10px;
+   border-radius: 5px;
+   margin-bottom: 500px;
+}
+.fondoUbic{
+
+   margin-left: 50px;
+    height:470px;
+    background-size: cover;
+    background-image: url(../img/mercedes-benz-clase-c-2022-centro-soymotor.jpg);
+    background-attachment: scroll;
+    width: 100%;
+
+}
+.footerUbic{
+    margin-top: 150px;
+    
+    display: block;
+
+    
+    
+    grid-area: footerUbic;
+    color: antiquewhite;
+}
+.h3{color: aliceblue;}
+
+@media screen and (max-width:468px){
+    .gridsUbic{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-areas: "headerUbic headerUbic "
+                                "mainUbic mainUbic "
+                                "mainUbic mainUbic "
+                                "footerUbic footerUbic ";
+    }
+    .headerUbic{width: 40%;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 150px;
+}
+    .navbarUbic__ul{
+        margin: 0%;
+        padding: 0%;
+        margin-top: 70px;
+        justify-content: left;
+        font-size: xx-small;
+        align-content: stretch;
+        flex-direction: row;
+        margin-right: 68px;
+    }
+    .fondoUbic{
+        flex-direction: column;
+        margin: 0%;
+        width: 1000px;
+    }
+    .h2Ubic{display: none;
+        margin-left: 10px;
+    justify-content: left;}
+    .mapa{display: none;}
+    .tituloResponsive{display: flex;
+    color: aqua;
+margin-right: 75%;
+padding-left: 5px;
+border-color: aliceblue;
+border-style: solid;
+border-width: 5px;
+margin-top: 20px;
+padding-right: 5px;
+border-radius: 5px;
+text-decoration-line: underline;
+background-color: black
+
+
+}
+.mapa2{display: flex;}
+.footerUbic{font-size: x-small;}
+}
