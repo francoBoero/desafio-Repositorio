@@ -5,22 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>motorsport</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
    <div class="contenedorGrid">
     
     <header class="header"> 
-        <h1>motorsport</h1>
+        <h1 data-aos="flip-left">motorsport</h1>
         
             
 
-     
-     
+
     
             
         <nav class="navbar">
-            <ul class="navbar__ul">
+            <div class="logo">
+                <img src="." alt="">
+                      </div>
+                     
+            <ul data-aos="fade-left" class="navbar__ul">
                 
                 <li class="navbar__li"><a href="./index.html">inicio</a></li>
                 <li class="navbar__li"><a href="./pages/contacto.html">contacto</a></li>
@@ -35,7 +40,7 @@
     </header>
     <br>
     <main class="main">
-        <div class="fondo">
+        <div data-aos="zoom-in" class="fondo">
             <h2 class="tituloMenor">Lorem ipsum dolor sit amet.</h2>
 
             <h2 class="main__subtitulo">Lorem ipsum dolor sit amet.</h2>
@@ -62,5 +67,9 @@
     <footer class="footer">©2022 Franco Boero, todos los derechos de autor reservados</footer>
     
    </div>
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   <script>
+    AOS.init();
+  </script>
 </body>
 </html>
