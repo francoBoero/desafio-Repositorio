@@ -9,7 +9,6 @@
 }
 .tituloMenor{display: none;}
 .tituloResponsive{display: none;}
-.mapa2{display: none;}
 .contenedorGrid{
     display: grid;
     grid-template-areas: "header header header header"
@@ -32,19 +31,15 @@ h1{
    
     
 }
-.logo {
-    width: 64 px
-    ;
-}
+
 .navbar{
     justify-items: end;
     display: flex;
 
 
 }
-a{
-    color: aliceblue;
-}
+
+
 .navbar__ul{
     margin: 15px;
     text-align: center;
@@ -52,9 +47,7 @@ a{
     padding-left: 30px;
 
 }
-.marcado{
-    color: rgb(11, 240, 252, 0.92);
-}
+
 .navbar__li{
     list-style: none;
     display: inline-block;
